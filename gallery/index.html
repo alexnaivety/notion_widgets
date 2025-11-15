@@ -12,11 +12,30 @@
       background: #191919;
     }
 
-    .tz-gallery {
-      padding: 40px;
+    /* Remove all spacing around the gallery */
+    .gallery-container,
+    .tz-gallery,
+    #gallery,
+    #gallery .container {
+      padding: 0 !important;
+      margin: 0 !important;
     }
-
+    
+    /* Remove Bootstrap column padding */
+    #gallery .row {
+      margin: 0 !important;
+    }
+    
+    #gallery .row > div {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    
+    /* Ensure thumbnails don't create spacing */
     .tz-gallery .thumbnail {
+      margin: 0 !important;
+      border: none !important;
+      background: #191919;
       padding: 0;
       margin-bottom: 30px;
       background-color: #191919; /* match background */
