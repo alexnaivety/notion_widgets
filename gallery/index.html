@@ -41,12 +41,18 @@
       background-color: #191919; /* match background */
       border-radius: 4px;
       border: none;
-      transition: 0.15s ease-in-out;
+      transition: transform 0.25s ease-in-out;
       box-shadow: none !important; /* removed shadow */
     }
 
+    /* Disable all clicking */
+    .thumbnail a {
+      pointer-events: none;
+      cursor: default;
+    }
+
     .tz-gallery .thumbnail:hover {
-      transform: translateY(-10px) scale(1.02);
+      transform: scale(1.05); 
     }
 
     .baguetteBox-button {
