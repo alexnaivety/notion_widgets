@@ -40,15 +40,19 @@
       aspect-ratio: 8 / 3;
       overflow: hidden;
       border-radius: 4px;
-      background: #191919;
+      background: #191919; /* background behind letterbox bars */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-
+    
     .image-wrapper img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain; /* show the whole image with no cropping */
       display: block;
     }
+
   </style>
 
 </head>
