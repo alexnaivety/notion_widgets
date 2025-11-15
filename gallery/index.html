@@ -22,9 +22,35 @@
     }
     
     /* Remove Bootstrap column padding */
-    #gallery .row {
-      margin: 0 !important;
+    /* FLEX CONTAINER */
+    .tz-gallery .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;    /* centers items */
+      gap: 20px;                  /* spacing between items */
+      margin: 0;
+      padding: 0;
     }
+    
+    /* GALLERY ITEM (REPLACES bootstrap columns) */
+    .gallery-item {
+      flex: 1 1 350px;            /* min width 350px, grows beyond */
+      max-width: 600px;           /* controls max size */
+      display: flex;
+      justify-content: center;
+    }
+    
+    /* THUMBNAIL BEHAVIOR */
+    .thumbnail {
+      width: 100%;
+      transition: transform 0.25s ease-in-out;
+    }
+    
+    /* Hover: grow in place */
+    .thumbnail:hover {
+      transform: scale(1.05);
+    }
+
     
     #gallery .row > div {
       padding: 0 !important;
@@ -91,7 +117,7 @@
           <div class="row">
 
             <!-- 1 -->
-            <div class="col-sm-6 col-md-4" data-aos="flip-up">
+            <div class="gallery-item" data-aos="flip-up">
               <div class="thumbnail">
                 <a class="lightbox" href="1.png">
                   <div class="image-wrapper">
@@ -102,7 +128,7 @@
             </div>
 
             <!-- 2 -->
-            <div class="col-sm-6 col-md-4" data-aos="flip-up" data-aos-delay="20">
+            <div class="gallery-item" data-aos="flip-up" data-aos-delay="20">
               <div class="thumbnail">
                 <a class="lightbox" href="2.png">
                   <div class="image-wrapper">
@@ -113,7 +139,7 @@
             </div>
 
             <!-- 3 -->
-            <div class="col-sm-6 col-md-4" data-aos="flip-up" data-aos-delay="40">
+            <div class="gallery-item" data-aos="flip-up" data-aos-delay="40">
               <div class="thumbnail">
                 <a class="lightbox" href="3.png">
                   <div class="image-wrapper">
@@ -124,7 +150,7 @@
             </div>
 
             <!-- 4 -->
-            <div class="col-sm-6 col-md-4" data-aos="flip-up" data-aos-delay="60">
+            <div class="gallery-item" data-aos="flip-up" data-aos-delay="60">
               <div class="thumbnail">
                 <a class="lightbox" href="4.png">
                   <div class="image-wrapper">
@@ -135,7 +161,7 @@
             </div>
 
             <!-- 5 -->
-            <div class="col-sm-6 col-md-4" data-aos="flip-up" data-aos-delay="80">
+            <div class="gallery-item" data-aos="flip-up" data-aos-delay="80">
               <div class="thumbnail">
                 <a class="lightbox" href="5.png">
                   <div class="image-wrapper">
@@ -146,7 +172,7 @@
             </div>
 
             <!-- 6 -->
-            <div class="col-sm-6 col-md-4" data-aos="flip-up" data-aos-delay="100">
+            <div class="gallery-item" data-aos="flip-up" data-aos-delay="100">
               <div class="thumbnail">
                 <a class="lightbox" href="6.png">
                   <div class="image-wrapper">
