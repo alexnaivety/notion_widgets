@@ -54,6 +54,14 @@
       transition: transform 0.15s ease-in-out;
     }
 
+    .thumbnail:hover {
+      transform: scale(1.25);
+    }
+    
+    .tz-gallery .thumbnail:hover {
+      transform: scale(1.25); 
+    }
+
     
     #gallery .row > div {
       padding: 0 !important;
@@ -312,51 +320,5 @@
 
     </section>
   </main>
-<script>
-const thumbnails = Array.from(document.querySelectorAll(".thumbnail"));
-let mouseX = 0;
-let mouseY = 0;
-let needsUpdate = false;
-
-// track mouse with no heavy work
-document.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  needsUpdate = true;
-});
-
-// smooth scaling loop
-function update() {
-  if (needsUpdate) {
-    thumbnails.forEach((thumb) => {
-      const rect = thumb.getBoundingClientRect();
-
-      const cx = rect.left + rect.width / 2;
-      const cy = rect.top + rect.height / 2;
-
-      const dx = mouseX - cx;
-      const dy = mouseY - cy;
-
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      const maxDist = 300;
-
-      let scale = 1;
-      if (distance < maxDist) {
-        const t = 1 - distance / maxDist;
-        scale = 1 + t * 0.15;
-      }
-
-      thumb.style.transform = `scale(${scale})`;
-    });
-
-    needsUpdate = false;
-  }
-
-  requestAnimationFrame(update);
-}
-
-requestAnimationFrame(update);
-</script>
-
 </body>
 </html>
