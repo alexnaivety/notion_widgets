@@ -6,13 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Gallery</title>
   
-  <!-- Bootstrap & BaguetteBox CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
   <link href="./css/thumbnail-gallery.css" rel="stylesheet" />
   
-  <!-- Added AOS Library CSS for animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
@@ -55,7 +53,7 @@
       justify-content: center;
     }
     
-    /* THUMBNAIL BEHAVIOR (Consolidated) */
+    /* THUMBNAIL BEHAVIOR */
     .thumbnail {
       width: 100%;
       transition: transform 0.25s ease-in-out;
@@ -77,7 +75,6 @@
       margin: 0 !important;
     }
 
-    /* Restored pointer-events so lightbox works */
     .thumbnail a {
       cursor: pointer;
     }
@@ -115,8 +112,37 @@
         <div class="tz-gallery">
           <div class="row">
 
-            <!-- 1 -->
             <div class="gallery-item" data-aos="flip-up">
+              <div class="thumbnail">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/1.png">
+                  <div class="image-wrapper">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/1.png">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-aos="flip-up" data-aos-delay="50">
+              <div class="thumbnail">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/2.png">
+                  <div class="image-wrapper">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/2.png">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-aos="flip-up" data-aos-delay="100">
+              <div class="thumbnail">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/3.png">
+                  <div class="image-wrapper">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/3.png">
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-aos="flip-up" data-aos-delay="150">
               <div class="thumbnail">
                 <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/4.png">
                   <div class="image-wrapper">
@@ -126,175 +152,127 @@
               </div>
             </div>
 
-            <!-- 2 -->
-            <div class="gallery-item" data-aos="flip-up" data-aos-delay="50">
-              <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/2.png?raw=true">
-                  <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/2.png?raw=true">
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- 3 -->
-            <div class="gallery-item" data-aos="flip-up" data-aos-delay="100">
-              <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/3.png?raw=true">
-                  <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/3.png?raw=true">
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- 4 -->
-            <div class="gallery-item" data-aos="flip-up" data-aos-delay="150">
-              <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/1.png?raw=true">
-                  <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/1.png?raw=true">
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!-- 5 (Fixed raw link) -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="200">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/6.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/6.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/6.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/6.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 6 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="250">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/7.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/7.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/7.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/7.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 7 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="300">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/9.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/9.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/9.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/9.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 8 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="350">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/12.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/12.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/12.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/12.png">
                   </div>
                 </a>
               </div>
             </div>
             
-            <!-- 9 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="400">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/13.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/13.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/13.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/13.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 10 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="450">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/14.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/14.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/14.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/14.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 11 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="500">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/15.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/15.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/15.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/15.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 12 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="550">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/8.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/8.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/8.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/8.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 13 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="600">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/16.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/16.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/16.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/16.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 14 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="650">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/18.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/18.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/18.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/18.png">
                   </div>
                 </a>
               </div>
             </div>
 
-            <!-- 15 -->
             <div class="gallery-item" data-aos="flip-up" data-aos-delay="700">
               <div class="thumbnail">
-                <a class="lightbox" href="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/23.png?raw=true">
+                <a class="lightbox" href="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/23.png">
                   <div class="image-wrapper">
-                    <img src="https://github.com/alexnaivety/notion_widgets/blob/main/gallery/23.png?raw=true">
+                    <img src="https://raw.githubusercontent.com/alexnaivety/notion_widgets/refs/heads/main/gallery/23.png">
                   </div>
                 </a>
               </div>
             </div>
 
-          </div> <!-- Properly closed row -->
-        </div> <!-- Properly closed tz-gallery -->
-      </div> <!-- Properly closed gallery-container -->
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <!-- Scripts properly placed before the closing body tag -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-  <!-- Added AOS Library JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
   <script>
-    // Initialize the gallery lightbox
     baguetteBox.run('.tz-gallery');
-    // Initialize scroll animations
     AOS.init();
   </script>
 
